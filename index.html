@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jquery-ui.css?v=202412161532">
+    <link rel="stylesheet" href="font-awesome.css?v=202412161532">
+    <link rel="stylesheet" href="style.css?v=202412161532">
+    <title>Readtime</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="top">
+            <div id="main">
+                <div class="sitewidth">
+                    <div id="sub-head">
+                        <header class="colset colset-1">
+							<div class="column-1">
+								<h1 id="logo" class="animate"><a href="/">ReadTime | Calculate how long it takes to read out loud</a></h1>
+							</div>
+						</header>
+                        <div class="colset colset-3">
+                            <div id="time" class="column column-1">
+                                <h2 class="title">Reading&nbsp;this&nbsp;text&nbsp;takes:</h2>
+                                <p id="output" title="HH:MM:SS:ms">00:00:35:<span id="milisecs">4</span></p>
+                            </div>
+
+                            <div id="settings" class="column column-2">
+                                <h2 class="title">Your&nbsp;read speed:</h2>
+                                <p class="slidervalue">1</p>
+                                <div id="slider"
+                                    class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><a
+                                        class="ui-slider-handle ui-state-default ui-corner-all" href="#"
+                                        style="left: 66.6667%;"></a></div>
+                            </div>
+
+                            <div id="break" class="column column-3">
+                                <h2 class="title">Add&nbsp;break:</h2>
+                                <input type="number" pattern="[0-9]*" id="breaktime" min="1" max="10"
+                                    placeholder="01-99" value="" >
+                                <button id="addbreak" title="Add" >Add</button>
+                            </div>
+                        </div>
+
+                        <div id="stopw" class="colset colset-1">
+                            <div class="column-1">
+                                <h2 class="title">Stopwatch:</h2>
+                                <div id="clock1" class="stopwatch">
+                                    <div class="display"><span class="hr">00</span>:<span class="min">00</span>:<span
+                                            class="sec">00</span></div>
+                                    <div class="controls">
+                                        <a class="btn start">Start</a>
+                                        <a class="btn stop" style="display: none;">Pause</a>
+                                        <a class="btn reset">Reset</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form id="the-input" name="the-input" method="post" action="" novalidate="" autocomplete="off" >
+                        <div id="input-wrap">
+                            <a href="#" class="clear"><i class="icon-remove-sign"></i></a><a href="#" class="restore"
+                                style="display: none;">Restore</a>
+
+                            <textarea id="input" name="input" placeholder="Type your text" autofocus=""
+                                style="resize: none; overflow-y: hidden; height: 430px;">Welcome to Readtime©,
+
+This introduction only takes you 00:00:35:40 seconds to read:
+                                
+Readtime is the only tool to help you calculate the time it takes to read your text out loud. This is ideal if you are working on a time set script, or writing the text for a big presentation. This program normally uses the average read speed, but you can also adjust the speed to your personal liking.
+                                
+To change the read speed to your personal liking, time your personal speed by reading this text. You can use the build-in stopwatch if you like. Then adjust the slider to match your personal time </textarea>
+                        </div>                     
+
+                        <div id="blocks">                            
+                            <a href="#" class="open-stopwatch block animate">Stopwatch</a>
+                           
+                        </div>
+                    </form>
+
+                </div><!-- top -->
+            </div><!-- top -->
+            <footer>
+                <div class="footer-content">
+                    <p><strong>Disclaimer:</strong>
+                        This site is a re-creation of the original website previously available at <a style="text-decoration: underline;" href="http://readtime.eu/">http://readtime.eu/</a>, which is no longer accessible. The content, design, and functionality have been rebuilt using publicly available resources retrieved from <a style="text-decoration: underline;" href="https://web.archive.org/web/20240920034318/http://readtime.eu/">  Wayback Machine</a>. This re-creation is hosted independently, is not affiliated with the original creators of readtime.eu, and is provided on a non-profit basis for informational purposes only. If you are the original owner or have concerns about this site, please contact me.</p>
+                </div>
+            </footer>
+        </div><!-- Main -->
+
+    </div>
+
+    <script type="text/javascript" src="jquery-1.7.1.min.js"> </script>
+    <script type="text/javascript" src="jquery-ui.min.js"> </script>
+    <script type="text/javascript" src="jquery.autoresize.js"> </script>
+    <script type="text/javascript" src="jquery.stopwatch.js"> </script>
+    <script type="text/javascript" src="textinputs_jquery.js"> </script>
+    <script type="text/javascript" src="index.js?v=202412161532"></script>
+</body>
+
+</html>
